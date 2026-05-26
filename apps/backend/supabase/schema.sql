@@ -44,6 +44,14 @@ create table public.student_profiles (
   created_at timestamptz not null default now()
 );
 
+create table public.institutions (
+  id uuid primary key default uuid_generate_v4(),
+  name text not null,
+  city text,
+  contact_phone text,
+  created_at timestamptz not null default now()
+);
+
 create table public.categories (
   id uuid primary key default uuid_generate_v4(),
   name text not null,

@@ -13,7 +13,7 @@ class BarAmaBaroApp extends StatelessWidget {
       title: 'Bar ama Baro',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorSchemeSeed: const Color(0xFF1E40AF),
+        colorSchemeSeed: const Color(0xFF146C5F),
         useMaterial3: true,
       ),
       home: const HomeMockScreen(),
@@ -27,6 +27,7 @@ class HomeMockScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final courses = ['Xisaab Fasalka 8aad', 'English Bilow', 'Computer Basics'];
+    final categories = ['Xisaab', 'English', 'Computer Basics', 'Quraan & Tajweed'];
 
     return Scaffold(
       appBar: AppBar(
@@ -52,15 +53,34 @@ class HomeMockScreen extends StatelessWidget {
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
             ),
           ),
+          const SizedBox(height: 16),
+          FilledButton(
+            onPressed: () {},
+            child: const Text('Bilow Barashada'),
+          ),
           const SizedBox(height: 24),
-          const Text('Casharro La Doortay', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          const Text('Qaybaha', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final category in categories)
+                Chip(
+                  avatar: const Icon(Icons.school, size: 18),
+                  label: Text(category),
+                ),
+            ],
+          ),
+          const SizedBox(height: 24),
+          const Text('Koorsooyin La Doortay', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           const SizedBox(height: 12),
           for (final course in courses)
             Card(
               child: ListTile(
                 leading: const Icon(Icons.play_circle_fill),
                 title: Text(course),
-                subtitle: const Text('Af-Soomaali • Bilaash'),
+                subtitle: const Text('Af-Soomaali - Bilaash'),
                 trailing: const Icon(Icons.arrow_forward_ios),
               ),
             ),

@@ -1,12 +1,32 @@
 # Bar ama Baro Public Website
 
-Recommended framework: Next.js.
+Next.js public website for the Somali-first learning marketplace.
 
-Pages:
-- /
-- /koorsooyin
-- /koorsooyin/[slug]
-- /macallimiin
-- /macallimiin/[id]
-- /nagu-saabsan
-- /xiriir
+## Stack
+
+- Next.js App Router
+- React
+- TypeScript
+
+## Pages
+
+- `/`
+- `/koorsooyin`
+- `/koorsooyin/[slug]`
+- `/macallimiin`
+- `/macallimiin/[id]`
+- `/nagu-saabsan`
+- `/xiriir`
+
+## Run
+
+```bash
+npm install
+npm run dev
+```
+
+The public website runs on `http://localhost:3000`.
+
+## Environment
+
+Copy `.env.example` to `.env.local` and fill local Supabase values. Only `NEXT_PUBLIC_*` anonymous client values belong in this app.

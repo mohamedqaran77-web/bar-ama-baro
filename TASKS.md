@@ -1,12 +1,12 @@
 # Bar ama Baro – Master Task List
 
 ## Milestone 0: Foundation
-- [ ] Create monorepo folders
-- [ ] Add AGENTS.md
-- [ ] Add README files
-- [ ] Add environment examples
-- [ ] Add coding standards
-- [ ] Add database schema
+- [x] Create monorepo folders
+- [x] Add AGENTS.md
+- [x] Add README files
+- [x] Add environment examples
+- [x] Add coding standards
+- [x] Add database schema
 
 ## Milestone 1: Auth & Roles
 - [ ] Register screen
