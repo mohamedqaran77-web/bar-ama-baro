@@ -14,11 +14,22 @@ Flutter app for students, teachers, and parents.
 - Onboarding
 - Gal Akoonka
 - Isdiiwaan Geli
-- Home
-- Koorsooyinka
-- Course Details
-- Student Dashboard
-- Teacher Dashboard
+- Xaqiiji OTP
+- Hilmaamay Password
+
+## Current Architecture
+
+```text
+lib/
+  app/                         # App routes and MaterialApp setup
+  core/validation/             # Shared validation logic
+  features/auth/
+    data/                      # MockAuthRepository
+    domain/                    # AuthRepository interface and auth models
+    presentation/              # Screens, state, and widgets
+```
+
+Auth uses `AuthRepository` with `MockAuthRepository` for TASK 002. Real Supabase auth is intentionally not connected yet.
 
 ## Run
 

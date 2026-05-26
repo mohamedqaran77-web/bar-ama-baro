@@ -9,10 +9,10 @@
 - [x] Add database schema
 
 ## Milestone 1: Auth & Roles
-- [ ] Register screen
-- [ ] Login screen
-- [ ] OTP verification placeholder
-- [ ] Forgot password
+- [x] Register screen
+- [x] Login screen
+- [x] OTP verification placeholder
+- [x] Forgot password
 - [ ] Student role
 - [ ] Teacher role
 - [ ] Parent role
