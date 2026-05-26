@@ -17,6 +17,7 @@ Next.js public website for the Somali-first learning marketplace.
 - `/macallimiin/[id]`
 - `/nagu-saabsan`
 - `/xiriir`
+- `/preview`
 
 ## Run
 
@@ -26,6 +27,18 @@ npm run dev
 ```
 
 The public website runs on `http://localhost:3000`.
+
+## Visual Preview Gallery
+
+To view the TASK 002A visual preview:
+
+```bash
+cd apps/web
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000/preview`.
 
 ## Environment
 

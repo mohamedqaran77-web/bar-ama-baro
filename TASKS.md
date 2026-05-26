@@ -13,6 +13,7 @@
 - [x] Login screen
 - [x] OTP verification placeholder
 - [x] Forgot password
+- [x] Visual preview gallery
 - [ ] Student role
 - [ ] Teacher role
 - [ ] Parent role
