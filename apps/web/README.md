@@ -30,7 +30,7 @@ The public website runs on `http://localhost:3000`.
 
 ## Visual Preview Gallery
 
-To view the TASK 002A visual preview:
+To view the visual preview and TASK 002B premium redesign:
 
 ```bash
 cd apps/web
@@ -38,7 +38,10 @@ npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000/preview`.
+Then open:
+
+- `http://localhost:3000`
+- `http://localhost:3000/preview`
 
 ## Environment
 

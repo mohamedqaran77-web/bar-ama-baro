@@ -20,6 +20,7 @@
 - [ ] Admin role
 
 ## Milestone 2: Public Learning Marketplace
+- [x] Premium UI/UX redesign
 - [ ] Home page
 - [ ] Courses page
 - [ ] Course details page

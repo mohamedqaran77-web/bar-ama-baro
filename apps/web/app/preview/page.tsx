@@ -58,22 +58,19 @@ const authScreens = [
   }
 ];
 
-const completedScreens = ['Splash', 'Onboarding', 'Gal Akoonka', 'Isdiiwaan Geli', 'Xaqiiji OTP', 'Hilmaamay Password'];
-
-const completedArchitecture = [
-  'Feature-first auth folders',
-  'AuthRepository interface',
-  'MockAuthRepository implementation',
-  'Somali form validation',
-  'Loading, error, and success states',
-  'Validator and auth repository tests'
+const redesignChanges = [
+  'Hero, search, buttons, cards, spacing, iyo typography waa la cusbooneysiiyay.',
+  'Navigation-ka iyo footer-ka waxay noqdeen kuwo nadiif ah oo premium ah.',
+  'Qaybaha iyo koorsooyinka la doortay waxay heleen hierarchy muuqaal oo xooggan.',
+  'Trust, value, iyo learning path sections ayaa lagu daray.',
+  'Palette-ku wuxuu isku darayaa ink deep, green, blue, white, iyo accent diirran.'
 ];
 
 const nextItems = [
-  'TASK 003: Koorsooyinka page',
-  'Connect real Supabase auth later with env placeholders',
-  'Add role flows for student, teacher, parent, and admin',
-  'Add guarded dashboards after auth is ready'
+  'TASK 003: Dhis bogga Koorsooyinka oo dhammeystiran.',
+  'Ku xir course data marka Supabase schema iyo policies diyaar noqdaan.',
+  'Ku fidin design-kan premium-ka ah course details iyo teacher profiles.',
+  'Ku dar auth/session state marka backend integration bilaabato.'
 ];
 
 export default function PreviewPage() {
@@ -85,19 +82,50 @@ export default function PreviewPage() {
             <p className="preview-kicker">Bar ama Baro</p>
             <h1>Waxa La Dhisay Ilaa Hadda</h1>
             <p>
-              Muuqaal kooban oo tusaya auth flow-ga mobile-ka, qaab dhismeedka la dhisay, iyo tallaabada xigta ee MVP-ga.
+              Muuqaal kooban oo tusaya auth flow-ga mobile-ka, homepage-ka premium-ka ah, iyo waxa is beddelay redesign-ka.
             </p>
           </div>
-          <a className="button" href="/koorsooyin">
-            Eeg Koorsooyinka
+          <a className="button" href="/">
+            Eeg Homepage-ka
           </a>
+        </div>
+      </section>
+
+      <section className="container preview-section" aria-labelledby="homepage-preview-title">
+        <div className="preview-section-heading">
+          <p className="preview-kicker">Homepage Premium</p>
+          <h2 id="homepage-preview-title">Naqshadda Cusub ee Homepage-ka</h2>
+        </div>
+        <div className="homepage-preview">
+          <div className="homepage-preview-hero">
+            <p className="preview-kicker">Somali-first learning platform</p>
+            <h3>Bar ama Baro</h3>
+            <div className="homepage-preview-search">
+              <span>Raadi koorso, maaddo, ama macallin</span>
+              <span>Raadi</span>
+            </div>
+          </div>
+          <div className="homepage-preview-grid">
+            <div className="homepage-preview-card">
+              <strong>Qaybaha</strong>
+              <span>Xisaab, English, Computer Basics</span>
+            </div>
+            <div className="homepage-preview-card">
+              <strong>Koorsooyin La Doortay</strong>
+              <span>Cards nadiif ah, rating, casharro, iyo CTA</span>
+            </div>
+            <div className="homepage-preview-card">
+              <strong>Sababta loo dhisayo</strong>
+              <span>Trust, value, iyo learning path</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="container preview-section" aria-labelledby="mockups-title">
         <div className="preview-section-heading">
           <p className="preview-kicker">Mobile Auth</p>
-          <h2 id="mockups-title">Shaashadaha La Dhisay</h2>
+          <h2 id="mockups-title">Shaashadaha Auth-ka ee Dhameystiran</h2>
         </div>
 
         <div className="phone-grid">
@@ -136,14 +164,13 @@ export default function PreviewPage() {
 
       <section className="container preview-section" aria-labelledby="status-title">
         <div className="preview-section-heading">
-          <p className="preview-kicker">Project Status</p>
-          <h2 id="status-title">Horumarka Hadda</h2>
+          <p className="preview-kicker">Horumarka Mashruuca</p>
+          <h2 id="status-title">Redesign-ka iyo Waxa Xiga</h2>
         </div>
 
         <div className="status-grid">
-          <StatusList title="Screens completed" items={completedScreens} />
-          <StatusList title="Architecture completed" items={completedArchitecture} />
-          <StatusList title="What is next" items={nextItems} />
+          <StatusList title="Waxa Redesign-ku Bedelay" items={redesignChanges} />
+          <StatusList title="Waxa Xiga" items={nextItems} />
         </div>
       </section>
     </main>
